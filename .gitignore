@@ -1,27 +1,4 @@
-# Compiled Object files
-*.o
-*.obj
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Compiled Static libraries
-*.a
-*.lib
-
-# Executables
-*.exe
-
-# DUB
-.dub
-docs.json
-__dummy.html
-docs/
-
-# Code coverage
-*.lst
+# Java ignore
 
 # Compiled class file
 *.class
@@ -48,55 +25,30 @@ docs/
 hs_err_pid*
 replay_pid*
 
-# Prerequisites
-*.d
+# Gradle ignore
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+.gradle
+**/build/
+!src/**/build/
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Ignore Gradle GUI config
+gradle-app.setting
 
-# Precompiled Headers
-*.gch
-*.pch
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Avoid ignore Gradle wrappper properties
+!gradle-wrapper.properties
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# Cache of project
+.gradletasknamecache
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Eclipse Gradle plugin generated files
+# Eclipse Core
+.project
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# IDEA ignore
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+.idea
